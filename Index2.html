@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MedPortal | Tu Base de Datos Interactiva</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @keyframes gradient {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+        .animated-bg {
+            background: linear-gradient(-45deg, #09090b, #1e3a8a, #064e3b, #09090b);
+            background-size: 400% 400%;
+            animation: gradient 15s ease infinite;
+        }
+        .category-pill {
+            @apply px-5 py-2 rounded-full border border-zinc-800 bg-zinc-900/50 text-sm text-zinc-400 transition hover:bg-zinc-800 hover:text-white;
+        }
+    </style>
+</head>
+<body class="bg-zinc-950 text-white font-sans">
+
+    <header class="w-full bg-zinc-950/80 backdrop-blur-md border-b border-zinc-800 sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-4 flex items-center justify-between">
+            <a href="#" class="text-2xl font-bold tracking-tighter">🩺 <span class="font-light text-zinc-400">Med</span>Portal</a>
+            <div class="hidden md:flex gap-6 text-sm font-medium">
+                <a href="https://YordanG15.github.io/Fisiologia/" class="hover:text-blue-500 transition">Fisiología</a>
+                <a href="#" class="hover:text-emerald-500 transition">Bioquímica</a>
+                <a href="#" class="hover:text-red-500 transition">Anatomía</a>
+            </div>
+            <button class="bg-white text-black px-5 py-2 rounded-full text-sm font-bold hover:bg-zinc-200 transition">Perfil</button>
+        </nav>
+    </header>
+
+    <section class="animated-bg py-24 border-b border-zinc-800">
+        <div class="container mx-auto px-6 text-center max-w-4xl">
+            <div class="flex justify-center gap-3 mb-10 flex-wrap">
+                <span class="px-5 py-2 rounded-full bg-white text-black text-sm font-bold cursor-default">Explorar todo</span>
+                <a href="https://YordanG15.github.io/Fisiologia/" class="category-pill">Fisiología</a>
+                <a href="#" class="category-pill">Bioquímica</a>
+                <a href="#" class="category-pill">Anatomía</a>
+                <a href="#" class="category-pill">Inmunología</a>
+            </div>
+
+            <h1 class="text-5xl md:text-7xl font-bold tracking-tighter mb-6">
+                Domina la medicina de forma interactiva.
+            </h1>
+            <p class="text-zinc-400 text-lg mb-12 max-w-2xl mx-auto">
+                Tu repositorio central de juegos, simuladores y resúmenes para potenciar tu estudio en la universidad.
+            </p>
+
+            <div class="relative max-w-2xl mx-auto">
+                <input type="text" class="w-full bg-zinc-900 border border-zinc-800 rounded-full py-4 px-12 focus:ring-2 focus:ring-blue-600 outline-none" placeholder="Buscar un tema o juego...">
+                <span class="absolute left-5 top-4 opacity-40">🔍</span>
+            </div>
+        </div>
+    </section>
+
+    <main class="container mx-auto px-6 py-16">
+        <h2 class="text-2xl font-bold mb-8">Recursos destacados</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            
+            <div class="group bg-zinc-900 border border-zinc-800 rounded-3xl overflow-hidden hover:border-zinc-600 transition">
+                <div class="aspect-video bg-blue-900/20 flex items-center justify-center text-5xl">⚡</div>
+                <div class="p-6">
+                    <div class="flex justify-between items-start mb-2">
+                        <h3 class="text-xl font-bold">Potencial de Acción v4</h3>
+                        <span class="text-xs bg-blue-600 px-2 py-1 rounded text-white uppercase font-bold">Juego</span>
+                    </div>
+                    <p class="text-zinc-400 text-sm mb-6">Simulador interactivo sobre despolarización y canales iónicos.</p>
+                    <a href="https://YordanG15.github.io/Fisiologia/potencial_accion_v4.html" class="block text-center bg-zinc-800 py-3 rounded-2xl font-bold hover:bg-white hover:text-black transition">Jugar ahora</a>
+                </div>
+            </div>
+
+            <div class="bg-zinc-900/50 border border-zinc-800 border-dashed rounded-3xl flex items-center justify-center p-12">
+                <p class="text-zinc-600 font-medium">Próximo juego: Ciclo de Krebs 🧬</p>
+            </div>
+
+        </div>
+    </main>
+
+    <footer class="py-12 border-t border-zinc-900 text-center text-zinc-600 text-sm">
+        <p>&copy; 2026 MedPortal - Desarrollado por Yordan Garcés</p>
+    </footer>
+
+</body>
+</html>
