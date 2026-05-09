@@ -21,18 +21,43 @@
         }
     </style>
 </head>
-<body class="bg-zinc-950 text-white font-sans">
+<body class="bg-zinc-950 text-white font-sans flex overflow-hidden">
 
-    <header class="w-full bg-zinc-950/80 backdrop-blur-md border-b border-zinc-800 sticky top-0 z-50">
-        <nav class="container mx-auto px-6 py-4 flex items-center justify-between">
-            <a href="#" class="text-2xl font-bold tracking-tighter">🩺 <span class="font-light text-zinc-400">Med</span>Portal</a>
-            <div class="hidden md:flex gap-6 text-sm font-medium">
-                <a href="https://YordanG15.github.io/Fisiologia/" class="hover:text-blue-500 transition">Fisiología</a>
-                <a href="https://yordang15.github.io/bioquimica/index.html" class="hover:text-emerald-500 transition">Bioquímica</a>
-                <a href="#" class="hover:text-red-500 transition">Anatomía</a>
-            </div>
+    <!-- SIDEBAR IZQUIERDA -->
+    <aside class="w-20 h-screen bg-zinc-900 border-r border-zinc-800 flex flex-col items-center py-8 gap-8 sticky top-0">
+        <!-- Logo pequeño o Icono superior -->
+        <div class="text-blue-500 mb-4">
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2H2v10h10V2z"/><path d="M22 12H12v10h10V12z"/><path d="M12 12H2v10h10V12z"/><path d="M22 2H12v10h10V2z"/></svg>
+        </div>
+
+        <!-- Enlaces con Iconos (Tooltip nativo con 'title') -->
+        <nav class="flex flex-col gap-6">
+            <a href="#" title="Fisiología" class="p-3 rounded-xl hover:bg-zinc-800 transition text-zinc-400 hover:text-blue-500">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg>
+            </a>
+            <a href="#" title="Bioquímica" class="p-3 rounded-xl hover:bg-zinc-800 transition text-zinc-400 hover:text-emerald-500">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 2v8l-8 12h20l-8-12V2"/><path d="M6 12h12"/></svg>
+            </a>
+            <a href="#" title="Anatomía" class="p-3 rounded-xl hover:bg-zinc-800 transition text-zinc-400 hover:text-red-500">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="5" r="3"/><path d="m6.5 9 11 0"/><path d="m12 10 0 6"/><path d="m12 16-3.5 5"/><path d="m12 16 3.5 5"/></svg>
+            </a>
+            <a href="#" title="Inmunología" class="p-3 rounded-xl hover:bg-zinc-800 transition text-zinc-400 hover:text-purple-500">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10"/></svg>
+            </a>
         </nav>
-    </header>
+    </aside>
+
+    <!-- CONTENEDOR PRINCIPAL -->
+    <div class="flex-1 h-screen overflow-y-auto">
+        <header class="w-full bg-zinc-950/80 backdrop-blur-md border-b border-zinc-900 sticky top-0 z-50">
+            <nav class="container mx-auto px-6 py-4 flex items-center">
+                <a href="#" class="text-2xl font-bold tracking-tighter">
+                    <span class="font-light text-zinc-400">Med</span>YG
+                </a>
+            </nav>
+        </header>
+
+        <!-- Aquí sigue tu sección "animated-bg" y el resto del código -->
 
     <section class="animated-bg py-24 border-b border-zinc-800">
         <div class="container mx-auto px-6 text-center max-w-4xl">
@@ -62,9 +87,6 @@
                     <a href="https://YordanG15.github.io/Fisiologia/potencial_accion_v4.html" class="block text-center bg-zinc-800 py-3 rounded-2xl font-bold hover:bg-white hover:text-black transition">Jugar ahora</a>
                 </div>
             </div>
-
-            <div class="bg-zinc-900/50 border border-zinc-800 border-dashed rounded-3xl flex items-center justify-center p-12">
-                <p class="text-zinc-600 font-medium">Próximo juego: Ciclo de Krebs 🧬</p>
             </div>
 
         </div>
